@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07080d">
+  <meta name="description" content="AICaseFlow public interactive prototype for institution grievance tracking and cross-bureau coordination. Synthetic data only.">
+  <title>AICaseFlow — Institutional Grievance Intelligence | Prototype 1.1</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <section id="landing" class="landing">
+    <header class="site-header wrap">
+      <a href="#top" class="brand" aria-label="AICaseFlow home"><span class="brand-logo">N</span><span><b>AICaseFlow</b><small>INSTITUTIONAL INTELLIGENCE</small></span></a>
+      <nav class="site-links"><a href="#platform">Platform</a><a href="#workflow">Workflow</a><a href="#trust">Security</a></nav>
+      <button class="btn btn-outline" data-action="launch-demo">Launch public demo <span>↗</span></button>
+    </header>
+    <main>
+      <section id="top" class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><i></i> INSTITUTIONAL GRIEVANCE INTELLIGENCE</div>
+          <h1>One institution.<br>One case picture.<br><span class="gradient">Clearer coordination.</span></h1>
+          <p>A unified workspace to track complaints, identify cross-bureau overlap, follow deadlines and keep every action accountable.</p>
+          <div class="hero-buttons"><button class="btn btn-primary" data-action="launch-demo">Explore the prototype <span>→</span></button><a class="btn btn-quiet" href="#workflow">See the workflow</a></div>
+          <div class="pills"><span>＋ Complaint intake</span><span>⌁ Smart routing</span><span>◷ SLA watch</span><span>⇄ Case overlap</span></div>
+        </div>
+        <div class="hero-art" aria-label="AICaseFlow visual identity"><div class="glow-ring"></div><div class="crystal">N</div><div class="art-caption">BUILT FOR PUBLIC TRUST</div></div>
+      </section>
+      <section id="platform" class="public-preview wrap">
+        <div class="preview-bar"><div class="mini-brand"><span class="brand-logo small">N</span><b>AICaseFlow <small>CONTROL CENTRE</small></b></div><span class="demo-chip"><i></i> SYNTHETIC DEMO DATA</span></div>
+        <div class="preview-cards"><div><small>Total cases</small><strong>12</strong><span>All sample records</span></div><div><small>Active queue</small><strong>7</strong><span>Needs action</span></div><div><small>Overlap groups</small><strong>2</strong><span>Coordination required</span></div><div><small>Resolved</small><strong>3</strong><span>Outcome recorded</span></div></div>
+        <div class="preview-bottom"><div><small>COORDINATION SIGNAL</small><h2>Potential Overlapping Cases</h2><p>Institution Alpha · PGRC-2026-001 + RB-2026-014</p></div><span class="status status-warn">Human review required</span></div>
+      </section>
+      <section id="workflow" class="section wrap"><div class="section-heading"><span class="eyebrow">ONE TRACEABLE JOURNEY</span><h2>From intake to <span class="gradient">resolution.</span></h2></div><div class="feature-grid"><article><span class="feature-symbol">01</span><h3>Capture</h3><p>Register an institution and create a case with a unique reference, owner and expected date.</p></article><article><span class="feature-symbol">02</span><h3>Coordinate</h3><p>Detect active cases at the same institution across RB, PGRC and other bureaus.</p></article><article><span class="feature-symbol">03</span><h3>Monitor</h3><p>Surface overdue work, approaching deadlines, and workload trends.</p></article><article><span class="feature-symbol">04</span><h3>Account</h3><p>Keep notes, status changes, removals and restores in a visible prototype history.</p></article></div></section>
+      <section id="trust" class="closing wrap"><span class="eyebrow">PUBLIC INTERACTIVE PROTOTYPE</span><h2>Demo the workflow.<br><span class="gradient">Explore the details.</span></h2><p>This GitHub Pages version runs entirely in your browser using synthetic records. It is not connected to AICTE systems or a shared database.</p><button class="btn btn-primary" data-action="launch-demo">Launch AICaseFlow <span>→</span></button></section>
+    </main>
+    <footer class="site-footer wrap"><a href="#top" class="brand"><span class="brand-logo">N</span><span><b>AICaseFlow</b><small>INSTITUTIONAL INTELLIGENCE</small></span></a><span>SIH26264 prototype · synthetic records only</span><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub Pages ready ↗</a></footer>
+  </section>
+
+  <div id="workspace" class="workspace hidden">
+    <aside id="sidebar" class="sidebar">
+      <a href="#workspace" class="brand sidebar-brand" data-view="overview" aria-label="Return to overview" title="Return to overview"><span class="brand-logo">N</span><span class="brand-text"><b>AICaseFlow</b><small>CONTROL CENTRE</small></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-view="overview"><span>◫</span><b>Overview</b></button>
+        <button class="nav-item" data-view="complaints"><span>▤</span><b>Complaints</b><em id="nav-cases">0</em></button>
+        <button class="nav-item" data-view="institutions"><span>⌂</span><b>Institutions</b></button>
+        <button class="nav-item" data-view="overlaps"><span>⌁</span><b>Overlap alerts</b><em id="nav-overlaps">0</em></button>
+        <button class="nav-item" data-view="routing"><span>⌘</span><b>Smart routing</b></button>
+        <button class="nav-item" data-view="escalations"><span>◷</span><b>Escalations</b></button>
+        <button class="nav-item" data-view="bureaus"><span>⇄</span><b>Bureaus / Cells</b></button>
+        <button class="nav-item" data-view="analytics"><span>▥</span><b>Analytics</b></button>
+        <button class="nav-item" data-view="reports"><span>▦</span><b>Reports</b></button>
+        <button class="nav-item" data-view="notifications"><span>♢</span><b>Notifications</b><em id="nav-notifications">0</em></button>
+      </nav>
+      <div class="side-label side-label-lower">GOVERNANCE</div>
+      <nav class="nav-list"><button class="nav-item" data-view="audit"><span>◇</span><b>Audit trail</b></button><button class="nav-item" data-view="people"><span>♙</span><b>Demo users</b></button><button class="nav-item" data-view="removed"><span>▣</span><b>Removed cases</b><em id="nav-removed">0</em></button></nav>
+      <div class="sidebar-bottom"><div class="session-chip"><i></i><span><b>Public demo</b><small>Changes stay in this tab</small></span></div><button class="profile-mini" data-action="open-profile"><span class="avatar" id="side-avatar">AM</span><span class="profile-mini-copy"><b id="side-name">Demo Admin</b><small id="side-role">Super Admin (demo)</small></span><span>⌄</span></button></div>
+    </aside>
+    <main class="app-main">
+      <header class="topbar"><button class="icon-btn menu-toggle" data-action="toggle-sidebar" title="Collapse / expand sidebar" aria-label="Collapse navigation">☰</button><div class="crumb"><span>Workspace</span><span>/</span><b id="view-title">Overview</b></div><div class="top-actions"><span class="demo-chip"><i></i> DEMO ENVIRONMENT</span><button class="icon-btn" data-action="reset-demo" title="Reset synthetic demo data">↻</button><button class="avatar avatar-button" data-action="open-profile" id="top-avatar">AM</button><button class="top-user" data-action="open-profile" id="top-name">Demo Admin⌄</button></div></header>
+      <div class="demo-banner"><b>Prototype mode</b><span>Synthetic data only. Changes are local to this browser tab and are not shared with other visitors.</span><button data-action="reset-demo">Reset demo</button></div>
+      <section id="view-content" class="view-content" aria-live="polite"></section>
+      <footer class="app-footer"><span>AICaseFlow · SIH26264 prototype</span><span><i></i> No live AICTE connection</span></footer>
+    </main>
+  </div>
+  <div id="modal-root"></div><div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+  <noscript><div class="noscript">AICaseFlow prototype needs JavaScript enabled.</div></noscript>
+</body>
+</html>
